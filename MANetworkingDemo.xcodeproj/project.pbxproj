@@ -90,34 +90,74 @@
 		453C066F24E2802200B416B8 /* MANetworkingDemo */ = {
 			isa = PBXGroup;
 			children = (
+				458B838C24E2C2D100264C74 /* Data */,
+				458B838A24E2C27900264C74 /* Session */,
+				458B838824E2C15900264C74 /* AFNet */,
+				458B838624E2C13100264C74 /* Connection */,
+				458B838424E2C10200264C74 /* Resources */,
+				453C068A24E2808500B416B8 /* AppDelegate.h */,
+				453C068924E2808500B416B8 /* AppDelegate.m */,
+				453C069E24E280AA00B416B8 /* ViewController.h */,
+				453C069724E280A900B416B8 /* ViewController.m */,
+			);
+			path = MANetworkingDemo;
+			sourceTree = "<group>";
+		};
+		458B838424E2C10200264C74 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				453C069B24E280A900B416B8 /* SceneDelegate.h */,
+				453C069D24E280AA00B416B8 /* SceneDelegate.m */,
 				453C068124E2802300B416B8 /* Info.plist */,
 				453C068224E2802300B416B8 /* main.m */,
 				45370EF224E290C800C688EC /* PrefixHeader.pch */,
 				453C067924E2802200B416B8 /* Main.storyboard */,
 				453C067E24E2802300B416B8 /* LaunchScreen.storyboard */,
 				453C067C24E2802300B416B8 /* Assets.xcassets */,
-				453C068A24E2808500B416B8 /* AppDelegate.h */,
-				453C068924E2808500B416B8 /* AppDelegate.m */,
-				453C069B24E280A900B416B8 /* SceneDelegate.h */,
-				453C069D24E280AA00B416B8 /* SceneDelegate.m */,
-				453C069E24E280AA00B416B8 /* ViewController.h */,
-				453C069724E280A900B416B8 /* ViewController.m */,
-				453C068F24E280A000B416B8 /* DataVC.h */,
-				453C069024E280A000B416B8 /* DataVC.m */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		458B838624E2C13100264C74 /* Connection */ = {
+			isa = PBXGroup;
+			children = (
 				453C068E24E2809F00B416B8 /* ConnectionVC.h */,
 				453C068C24E2809F00B416B8 /* ConnectionVC.m */,
 				453C069124E280A000B416B8 /* ConnectionDownloadVC.h */,
 				453C068D24E2809F00B416B8 /* ConnectionDownloadVC.m */,
+			);
+			name = Connection;
+			sourceTree = "<group>";
+		};
+		458B838824E2C15900264C74 /* AFNet */ = {
+			isa = PBXGroup;
+			children = (
+				45370EEF24E2879A00C688EC /* AFNetwokingVC.h */,
+				45370EF024E2879A00C688EC /* AFNetwokingVC.m */,
+			);
+			name = AFNet;
+			sourceTree = "<group>";
+		};
+		458B838A24E2C27900264C74 /* Session */ = {
+			isa = PBXGroup;
+			children = (
 				453C069524E280A900B416B8 /* SessionVC.h */,
 				453C069624E280A900B416B8 /* SessionVC.m */,
 				453C069824E280A900B416B8 /* SessionDownloadVC.h */,
 				453C069C24E280A900B416B8 /* SessionDownloadVC.m */,
 				453C069924E280A900B416B8 /* SessionUploadVC.h */,
 				453C069A24E280A900B416B8 /* SessionUploadVC.m */,
-				45370EEF24E2879A00C688EC /* AFNetwokingVC.h */,
-				45370EF024E2879A00C688EC /* AFNetwokingVC.m */,
 			);
-			path = MANetworkingDemo;
+			name = Session;
+			sourceTree = "<group>";
+		};
+		458B838C24E2C2D100264C74 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				453C068F24E280A000B416B8 /* DataVC.h */,
+				453C069024E280A000B416B8 /* DataVC.m */,
+			);
+			name = Data;
 			sourceTree = "<group>";
 		};
 		BA1BA8B20EA1B7BFB4641DAE /* Pods */ = {
