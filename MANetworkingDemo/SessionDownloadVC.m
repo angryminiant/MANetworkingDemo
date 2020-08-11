@@ -8,8 +8,6 @@
 
 #import "SessionDownloadVC.h"
 
-#define kScreanWidth [UIScreen mainScreen].bounds.size.width
-#define kScreanHeight [UIScreen mainScreen].bounds.size.height
 
 @interface SessionDownloadVC ()<NSURLSessionDownloadDelegate>
 
@@ -98,7 +96,7 @@
 // 开始下载
 - (void) download {
     
-    NSURL *url = [NSURL URLWithString:@"https://dldir1.qq.com/weixin/mac/WeChatMac.dmg"];
+    NSURL *url = [NSURL URLWithString:DownloadUrlLink];
     if ( self.downloadTask ) {
              
         // 完全取消，不可原点重启

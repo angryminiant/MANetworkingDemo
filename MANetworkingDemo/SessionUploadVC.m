@@ -8,8 +8,6 @@
 
 #import "SessionUploadVC.h"
 
-#define kScreanWidth [UIScreen mainScreen].bounds.size.width
-#define kScreanHeight [UIScreen mainScreen].bounds.size.height
 
 @interface SessionUploadVC ()
 
@@ -53,7 +51,7 @@
 
 - (void) sessionUploadTask {
     
-    NSURL *url = [NSURL URLWithString:@"https://api.weibo.com/2/statuses/public_timeline.json"];
+    NSURL *url = [NSURL URLWithString:JsonUrlLink];
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
     
     [request setHTTPMethod:@"POST"];

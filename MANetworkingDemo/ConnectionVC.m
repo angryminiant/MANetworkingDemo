@@ -8,8 +8,6 @@
 
 #import "ConnectionVC.h"
 
-#define kScreanWidth [UIScreen mainScreen].bounds.size.width
-#define kScreanHeight [UIScreen mainScreen].bounds.size.height
 
 @interface ConnectionVC ()
 
@@ -143,7 +141,7 @@
     }
     // 1.URL
     
-    NSURL *url = [NSURL URLWithString:@"https://dldir1.qq.com/weixin/mac/WeChatMac.dmg"];
+    NSURL *url = [NSURL URLWithString:DownloadUrlLink];
     
     // 2.请求
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
@@ -176,7 +174,7 @@
     
     NSInteger tag = sender.tag;
  
-    NSURL *url = [NSURL URLWithString:@"https://api.weibo.com/2/statuses/public_timeline.json"];
+    NSURL *url = [NSURL URLWithString:JsonUrlLink];
     NSMutableURLRequest *urlRequest = [NSMutableURLRequest requestWithURL:url];
     
     self.isDelegateConnection = NO;

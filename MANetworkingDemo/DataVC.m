@@ -37,7 +37,7 @@
     dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         
         // 创建下载路径
-        NSURL *url = [NSURL URLWithString:@"https://cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png"];
+        NSURL *url = [NSURL URLWithString:DataUrlLink_Pic];
         
         // NSData的dataWithContentsOfURL:方法下载
         NSData *data = [NSData dataWithContentsOfURL:url];

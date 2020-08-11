@@ -31,14 +31,16 @@
     @"NSURLConnection 断点下载",
     @"NSURLSession",
     @"NSURLSession 断点现在",
-    @"NSURLSession 上传"];
+    @"NSURLSession 上传",
+    @"AFNetworking"];
     
     self.vcs = @[@"DataVC",
     @"ConnectionVC",
     @"ConnectionDownloadVC",
     @"SessionVC",
     @"SessionDownloadVC",
-    @"SessionUploadVC"];
+    @"SessionUploadVC",
+    @"AFNetwokingVC"];
     
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.tableView.delegate = self;

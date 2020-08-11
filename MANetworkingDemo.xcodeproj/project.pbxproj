@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		14632759A83CDF49683F32F5 /* libPods-MANetworkingDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 69FE3BFA44AACD24BE4E2FE1 /* libPods-MANetworkingDemo.a */; };
+		45370EF124E2879A00C688EC /* AFNetwokingVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 45370EF024E2879A00C688EC /* AFNetwokingVC.m */; };
 		453C067B24E2802200B416B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 453C067924E2802200B416B8 /* Main.storyboard */; };
 		453C067D24E2802300B416B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 453C067C24E2802300B416B8 /* Assets.xcassets */; };
 		453C068024E2802300B416B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 453C067E24E2802300B416B8 /* LaunchScreen.storyboard */; };
@@ -24,6 +25,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		45370EEF24E2879A00C688EC /* AFNetwokingVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AFNetwokingVC.h; sourceTree = "<group>"; };
+		45370EF024E2879A00C688EC /* AFNetwokingVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNetwokingVC.m; sourceTree = "<group>"; };
+		45370EF224E290C800C688EC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		453C066D24E2802200B416B8 /* MANetworkingDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MANetworkingDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		453C067A24E2802200B416B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		453C067C24E2802300B416B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -86,29 +90,32 @@
 		453C066F24E2802200B416B8 /* MANetworkingDemo */ = {
 			isa = PBXGroup;
 			children = (
-				453C067924E2802200B416B8 /* Main.storyboard */,
-				453C067C24E2802300B416B8 /* Assets.xcassets */,
-				453C067E24E2802300B416B8 /* LaunchScreen.storyboard */,
 				453C068124E2802300B416B8 /* Info.plist */,
 				453C068224E2802300B416B8 /* main.m */,
+				45370EF224E290C800C688EC /* PrefixHeader.pch */,
+				453C067924E2802200B416B8 /* Main.storyboard */,
+				453C067E24E2802300B416B8 /* LaunchScreen.storyboard */,
+				453C067C24E2802300B416B8 /* Assets.xcassets */,
 				453C068A24E2808500B416B8 /* AppDelegate.h */,
 				453C068924E2808500B416B8 /* AppDelegate.m */,
-				453C069124E280A000B416B8 /* ConnectionDownloadVC.h */,
-				453C068D24E2809F00B416B8 /* ConnectionDownloadVC.m */,
-				453C068E24E2809F00B416B8 /* ConnectionVC.h */,
-				453C068C24E2809F00B416B8 /* ConnectionVC.m */,
-				453C068F24E280A000B416B8 /* DataVC.h */,
-				453C069024E280A000B416B8 /* DataVC.m */,
 				453C069B24E280A900B416B8 /* SceneDelegate.h */,
 				453C069D24E280AA00B416B8 /* SceneDelegate.m */,
+				453C069E24E280AA00B416B8 /* ViewController.h */,
+				453C069724E280A900B416B8 /* ViewController.m */,
+				453C068F24E280A000B416B8 /* DataVC.h */,
+				453C069024E280A000B416B8 /* DataVC.m */,
+				453C068E24E2809F00B416B8 /* ConnectionVC.h */,
+				453C068C24E2809F00B416B8 /* ConnectionVC.m */,
+				453C069124E280A000B416B8 /* ConnectionDownloadVC.h */,
+				453C068D24E2809F00B416B8 /* ConnectionDownloadVC.m */,
+				453C069524E280A900B416B8 /* SessionVC.h */,
+				453C069624E280A900B416B8 /* SessionVC.m */,
 				453C069824E280A900B416B8 /* SessionDownloadVC.h */,
 				453C069C24E280A900B416B8 /* SessionDownloadVC.m */,
 				453C069924E280A900B416B8 /* SessionUploadVC.h */,
 				453C069A24E280A900B416B8 /* SessionUploadVC.m */,
-				453C069524E280A900B416B8 /* SessionVC.h */,
-				453C069624E280A900B416B8 /* SessionVC.m */,
-				453C069E24E280AA00B416B8 /* ViewController.h */,
-				453C069724E280A900B416B8 /* ViewController.m */,
+				45370EEF24E2879A00C688EC /* AFNetwokingVC.h */,
+				45370EF024E2879A00C688EC /* AFNetwokingVC.m */,
 			);
 			path = MANetworkingDemo;
 			sourceTree = "<group>";
@@ -119,7 +126,6 @@
 				8D95531693CCC9842E3C3D69 /* Pods-MANetworkingDemo.debug.xcconfig */,
 				C669097CEB96BE2237FEFEF3 /* Pods-MANetworkingDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -235,6 +241,7 @@
 				453C06A224E280AA00B416B8 /* SessionDownloadVC.m in Sources */,
 				453C069424E280A000B416B8 /* DataVC.m in Sources */,
 				453C06A324E280AA00B416B8 /* SceneDelegate.m in Sources */,
+				45370EF124E2879A00C688EC /* AFNetwokingVC.m in Sources */,
 				453C06A124E280AA00B416B8 /* SessionUploadVC.m in Sources */,
 				453C068324E2802300B416B8 /* main.m in Sources */,
 			);
@@ -377,8 +384,10 @@
 			baseConfigurationReference = 8D95531693CCC9842E3C3D69 /* Pods-MANetworkingDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MANetworkingDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = MANetworkingDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -397,8 +406,10 @@
 			baseConfigurationReference = C669097CEB96BE2237FEFEF3 /* Pods-MANetworkingDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/MANetworkingDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = MANetworkingDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

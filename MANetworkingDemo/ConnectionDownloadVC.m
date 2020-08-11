@@ -8,8 +8,6 @@
 
 #import "ConnectionDownloadVC.h"
 
-#define kScreanWidth [UIScreen mainScreen].bounds.size.width
-#define kScreanHeight [UIScreen mainScreen].bounds.size.height
 
 @interface ConnectionDownloadVC ()
 
@@ -105,7 +103,7 @@
     }
     // 1.URL
     
-    NSURL *url = [NSURL URLWithString:@"https://dldir1.qq.com/weixin/mac/WeChatMac.dmg"];
+    NSURL *url = [NSURL URLWithString:DownloadUrlLink];
     
     // 2.请求
     NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
