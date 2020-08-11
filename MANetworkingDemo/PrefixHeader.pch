@@ -19,5 +19,6 @@
 #define  DataUrlLink_Pic      @"https://cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png"
 #define  JsonUrlLink          @"https://api.weibo.com/2/statuses/public_timeline.json"
 #define  DownloadUrlLink      @"https://dldir1.qq.com/weixin/mac/WeChatMac.dmg"
+#define  PdfUrlLink           @"https://images.apple.com/legal/education/apple-school-manager/ASM-HK-ZH.pdf"
 
 #endif /* PrefixHeader_pch */

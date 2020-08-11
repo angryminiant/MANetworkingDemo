@@ -84,7 +84,7 @@
     
     __weak __typeof__(self) weakSelf = self;
     //临时配置，需要自己根据接口地址改动
-    NSString *urlStr = @"https://images.apple.com/legal/education/apple-school-manager/ASM-HK-ZH.pdf";
+    NSString *urlStr = PdfUrlLink;
     
     self.sessionTask = [manager GET:urlStr parameters:@{} headers:@{} progress:^(NSProgress * _Nonnull downloadProgress) {
                    
@@ -96,11 +96,9 @@
         });
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-                
-        __strong __typeof__(weakSelf) strongSelf = weakSelf;
         
-        NSString *filePath = @"";
-        [responseObject writeToFile:filePath atomically:YES];
+//        NSString *filePath = @"";
+//        [responseObject writeToFile:filePath atomically:YES];
                 
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"%@",error.userInfo);
@@ -152,7 +150,7 @@
     } destination:^NSURL *(NSURL *targetPath, NSURLResponse *response) {
 
         NSURL *path = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
-        return [path URLByAppendingPathComponent:@"QQ_V5.4.0.dmg"];
+        return [path URLByAppendingPathComponent:@"education.pdf"];
 
     } completionHandler:^(NSURLResponse *response, NSURL *filePath, NSError *error) {
 
