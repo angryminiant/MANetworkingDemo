@@ -45,6 +45,7 @@
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.tableView.tableFooterView = [UIView new];// 避免出现空白cell
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell_ID"];
     [self.view addSubview:self.tableView];
 }
@@ -61,11 +62,15 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell_ID"];
     }
     cell.textLabel.text = self.data[indexPath.row];
+    cell.selectionStyle = UITableViewCellSelectionStyleDefault;
     
     return cell;
 }
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    [cell setSelected:NO];
     
     Class classvc = NSClassFromString(self.vcs[indexPath.row]);
     UIViewController *vc = [classvc new];
