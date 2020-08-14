@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="189" id="KGk-i7-Jjw" customClass="MATaskCell">
+            <rect key="frame" x="0.0" y="0.0" width="478" height="189"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="478" height="189"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TZk-cc-b4p">
+                        <rect key="frame" x="0.0" y="0.0" width="478" height="159"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FRx-dM-nZz">
+                        <rect key="frame" x="0.0" y="159" width="478" height="30"/>
+                        <subviews>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="xPl-VL-EqY">
+                                <rect key="frame" x="20" y="0.0" width="438" height="10"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="xPl-VL-EqY" firstAttribute="leading" secondItem="FRx-dM-nZz" secondAttribute="leading" constant="20" id="9DP-ZO-kJh"/>
+                            <constraint firstAttribute="bottom" secondItem="xPl-VL-EqY" secondAttribute="bottom" constant="20" id="G0V-n8-q4o"/>
+                            <constraint firstItem="xPl-VL-EqY" firstAttribute="top" secondItem="FRx-dM-nZz" secondAttribute="top" id="VjE-AI-MJ0"/>
+                            <constraint firstAttribute="height" constant="30" id="fyS-jf-Ggx"/>
+                            <constraint firstAttribute="trailing" secondItem="xPl-VL-EqY" secondAttribute="trailing" constant="20" id="hHs-B6-nPb"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5wI-HW-8BE">
+                        <rect key="frame" x="165.5" y="78.5" width="147" height="32"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <state key="normal" title="加载中、播放、暂停">
+                            <color key="titleColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="btnActionClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="dlq-qt-D3R"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" cocoaTouchSystemColor="lightTextColor"/>
+                <constraints>
+                    <constraint firstItem="5wI-HW-8BE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="1nF-4E-AXa"/>
+                    <constraint firstItem="TZk-cc-b4p" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KUL-Qs-AQG"/>
+                    <constraint firstAttribute="trailing" secondItem="TZk-cc-b4p" secondAttribute="trailing" id="WQa-CZ-EcZ"/>
+                    <constraint firstAttribute="trailing" secondItem="FRx-dM-nZz" secondAttribute="trailing" id="bQK-JP-XdJ"/>
+                    <constraint firstAttribute="bottom" secondItem="FRx-dM-nZz" secondAttribute="bottom" id="f9l-7x-4vF"/>
+                    <constraint firstItem="FRx-dM-nZz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hsF-7l-8ym"/>
+                    <constraint firstItem="FRx-dM-nZz" firstAttribute="top" secondItem="TZk-cc-b4p" secondAttribute="bottom" id="jvh-e6-7be"/>
+                    <constraint firstItem="5wI-HW-8BE" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="nIx-ra-LJw"/>
+                    <constraint firstItem="TZk-cc-b4p" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zlb-tn-ifZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="btnAction" destination="5wI-HW-8BE" id="uKP-km-DHf"/>
+                <outlet property="playerView" destination="TZk-cc-b4p" id="hN3-xe-v1P"/>
+                <outlet property="progressView" destination="xPl-VL-EqY" id="HEd-he-8mc"/>
+            </connections>
+            <point key="canvasLocation" x="255.07246376811597" y="181.13839285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

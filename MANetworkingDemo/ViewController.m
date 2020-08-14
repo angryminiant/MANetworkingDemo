@@ -10,6 +10,7 @@
 
 @interface ViewController ()<UITableViewDelegate, UITableViewDataSource>
 
+
 @property (strong, nonatomic) UITableView *tableView;
 @property (strong, nonatomic) NSArray *data;
 @property (strong, nonatomic) NSArray *vcs;
@@ -30,9 +31,10 @@
     @"NSURLConnection",
     @"NSURLConnection 断点下载",
     @"NSURLSession",
-    @"NSURLSession 断点现在",
+    @"NSURLSession 断点下载",
     @"NSURLSession 上传",
-    @"AFNetworking"];
+    @"AFNetworking",
+    @"NSURLSession队列管理多任务下载"];
     
     self.vcs = @[@"DataVC",
     @"ConnectionVC",
@@ -40,7 +42,8 @@
     @"SessionVC",
     @"SessionDownloadVC",
     @"SessionUploadVC",
-    @"AFNetwokingVC"];
+    @"AFNetwokingVC",
+    @"MASessionOperationQueueTaskVC"];
     
     self.tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
     self.tableView.delegate = self;

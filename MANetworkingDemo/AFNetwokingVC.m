@@ -2,7 +2,7 @@
 //  AFNetwokingVC.m
 //  MANetworkingDemo
 //
-//  Created by hugengya on 2020/8/11.
+//  Created by ma on 2020/8/11.
 //  Copyright © 2020 com.ma. All rights reserved.
 //
 

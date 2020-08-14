@@ -2,7 +2,7 @@
 //  PrefixHeader.pch
 //  MANetworkingDemo
 //
-//  Created by hugengya on 2020/8/11.
+//  Created by ma on 2020/8/11.
 //  Copyright © 2020 com.ma. All rights reserved.
 //
 
@@ -20,5 +20,10 @@
 #define  JsonUrlLink          @"https://api.weibo.com/2/statuses/public_timeline.json"
 #define  DownloadUrlLink      @"https://dldir1.qq.com/weixin/mac/WeChatMac.dmg"
 #define  PdfUrlLink           @"https://images.apple.com/legal/education/apple-school-manager/ASM-HK-ZH.pdf"
+
+#import "MAOperation.h"
+
+
+
 
 #endif /* PrefixHeader_pch */
